@@ -324,6 +324,7 @@ h2{
 h4{
     color: white;
     margin: 0 12px;
+    font-size: 14px;
 }
 
 .iconos{
@@ -332,7 +333,7 @@ h4{
     margin: 0 11px;
 }
 .credit{
-    font-size: 10px;
+    font-size: 11px;
 }
 /* Fin de arreglos de main */
 
