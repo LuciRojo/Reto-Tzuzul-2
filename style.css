@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "main"
+    "footer";
+    gap:10px;
+    text-align: center;
+    background-image: url(./Imagenes/body.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(4px);
+
+}
+/* Arreglos Nav */
+
+.nav{
+    width: auto;
+    height: 76px;
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(./Imagenes/nav.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0 10px;
+}
+
+.nav-logo{
+    width: 65px;
+}
+
+.btn{
+    margin: 17px 0;
+    width: 100px;
+    height: 50px;
+    color: white;
+    font-weight: bold;
+    background-color:transparent;
+    border: 2px solid goldenrod;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: 1s;
+    font-family: 'Stick No Bills', sans-serif;
+    letter-spacing: 0.6mm;
+
+}
+.btn:hover{
+    background-color: goldenrod;
+    color: white;
+    border:none;
+}
+
+.btnb{
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: 1s;
+    letter-spacing: 0.5mm;
+    font-family: 'Stick No Bills', sans-serif;
+    background-color: goldenrod;
+    color: white;
+    
+}
+
+.btnb:hover{
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border:2px solid goldenrod;
+}
+
+/* Fin de arreglos de nav */
+
+/* Arreglos main */
+
+.main{
+    width: auto;
+    height: auto;
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+    "aside section1 section1 section1 section1 section1"
+    "aside article article article article article"
+    "aside article article article article article"
+    "aside section2 section2 section2 section2 section2"; 
+    
+}
+/* Aside */
+.aside{
+    padding: 0 8px;
+    margin: 1px;
+    margin-left: 9px;
+    width: 80%;
+    height: 100%;
+    grid-area: aside;
+    background-image: url(./Imagenes/aside.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    color: white;
+}
+
+.title{
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+
+.buscar{
+    
+    width: 190px;
+    height: 36px;
+    font-size: 14px;
+    border: 3px solid goldenrod;
+    color: white;
+    border-radius: 12px;
+    background-color: transparent;
+    font-family: 'Stick No Bills', sans-serif;
+    text-align: center;
+    
+}
+
+.abtn1{
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.abtn{
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+    color: white;
+    font-family: 'Stick No Bills', sans-serif;
+}
+
+.abtn::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 0;
+    
+    background-color: goldenrod;
+    transition: 0.5s ease;
+}
+
+.abtn:hover::before{
+    width: 100%;
+
+}
+
+/* Section 1 */
+.section1{
+    padding: 0;
+    /* margin: 10 0px; */
+    width: 100%;
+    height: 43px;
+    grid-area: section1;
+    display: flex;
+    gap: 20px;
+}
+
+.sbtn{
+    flex-direction: row;
+    width: 90px;
+    height: 100%;
+    border-radius: 19px;
+    border: 1px solid;
+    cursor: pointer;
+   transition: 2s;
+   font-family: 'Stick No Bills', sans-serif;
+   background-color: rgba(235, 233, 233, 0.87);
+   font-size: 16px;
+
+}
+
+.sbtn:hover{
+    transform: scale(1.1);
+}
+
+/* Article */
+.article{
+    width: auto;
+    height: 100vh;
+    grid-area: article;
+    /* background-color: burlywood; */
+    display: grid;
+    grid-template-columns: repeat(3,350px);
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe{
+    margin-top: 12px;
+    transition: 1s;
+}
+iframe:hover{
+    transform: scale(1.2);
+}
+
+.section2{
+    padding: 10px 120px 120px 0 ;
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 90px;
+    margin-top: 20px;
+    margin-left: 70px;
+    gap: 5px;
+}
+
+h2{
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+
+.registro{
+    width: auto;
+    height: 90px;
+    flex-direction: column;
+}
+
+.form{
+    font-family: 'Stick No Bills', sans-serif;
+    text-align: center;
+    transition: 2s;
+}
+
+
+.for .user-box input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 4px solid goldenrod;
+    outline: none;
+    background: none ;
+    color: aliceblue;
+    
+}
+
+.form:hover{
+    transform:scale(1.2);
+}
+.subm{
+    width: 73px;
+    height: 50px;
+    cursor: pointer;
+    border: 2px solid goldenrod;
+    background-color: transparent;
+    color: goldenrod;
+    font-family: 'Stick No Bills', sans-serif;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: 4s;
+}
+
+.subm:hover{
+    transform: rotate(360deg);
+    border: none;
+    background-color: goldenrod;
+    color: black;
+
+}
+
+.footer{
+    
+    grid-area: footer;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.foot{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(218, 165, 32, 0.336);
+}
+h4{
+    color: white;
+    margin: 0 12px;
+    font-size: 15px;
+}
+
+.iconos{
+    width: 40px;
+    height: 40px;
+    margin: 0 11px;
+}
+
+/* Fin de arreglos de main */
+
+   
